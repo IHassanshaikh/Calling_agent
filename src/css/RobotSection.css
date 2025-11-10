@@ -1,0 +1,153 @@
+.robot-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.robot-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.robot-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 60px 40px;
+  position: relative;
+  z-index: 100;
+}
+
+.cards-column {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card {
+  padding: 40px 30px;
+  color: #fff;
+  text-align: left;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+    z-index: 100;
+    width: 30vw;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.card-icon {
+  font-size: 28px;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.robot-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -55%) scale(1.1);
+    width: 64vw;
+    height: 1000px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.robot-center canvas {
+    width: 76vw !important;
+    height: 100vh !important;
+}
+
+@media (max-width: 1200px) {
+  .robot-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cards-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .robot-center {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .robot-container {
+    padding: 30px 20px;
+  }
+
+  .cards-column {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .robot-center {
+    height: 350px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-description {
+    font-size: 14px;
+  }
+}

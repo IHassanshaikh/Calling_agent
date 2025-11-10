@@ -1,0 +1,619 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #cfd7db;
+  padding: 3vw 6vw;
+  flex-wrap: wrap;
+  font-family: "Unbounded", sans-serif;
+}
+
+.display-none {
+  display: none !important;
+}
+
+/* ---------- Right Side ---------- */
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1vw;
+}
+
+.hero-textbox {
+  background-color: #dde4e7;
+  border-radius: 2.08vw;
+  padding: 2.5vw;
+  max-width: 58.5vw;
+  border: 0.05vw solid #bbb;
+}
+
+.hero-textbox h1 {
+  font-size: 3vw;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #111;
+}
+
+.hero-textbox span {
+  color: #000;
+}
+
+.divider {
+  width: 0.078vw;
+  height: 2.6vw;
+  background-color: #bbb;
+}
+
+.hero-textbox-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1vw;
+}
+
+.hero-textbox-footericons {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.hero-textbox-footericons img {
+  height: auto;
+  position: relative;
+}
+
+.hero-textbox-footericons img:nth-child(2),
+.hero-textbox-footericons img:nth-child(2) {
+  width: 4vw;
+}
+
+.hero-textbox-footericons img:nth-child(1) {
+  position: absolute;
+  left: -3vw;
+  z-index: 100;
+}
+
+.hero-textbox-footericons img:nth-child(2) {
+  z-index: 0;
+}
+
+.hero-textbox-footericons {
+  display: flex;
+}
+
+.subtext {
+  margin-top: 0.63vw;
+  font-size: 1.15vw;
+  color: #444;
+}
+
+.demo-btn {
+  background-color: #191c1b;
+  color: #fff;
+  border: none;
+  padding: 0.94vw 1.25vw;
+  border-radius: 0.83vw;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.04vw;
+}
+
+.demo-btn:hover {
+  background-color: #1a1a1a;
+}
+
+/* ---------- Stats Section ---------- */
+.hero-stats {
+  display: flex;
+  gap: 2.08vw;
+  margin-top: 0.52vw;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 1.04vw;
+  border-bottom: 1px solid #bbb;
+}
+
+.hero-stats-numbers {
+  display: flex;
+  gap: 2.6vw;
+  margin-top: 2.08vw;
+}
+
+.hero-stats-content h3 {
+  margin: 0;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+.hero-stats-content p {
+  font-size: 1vw;
+  color: #555;
+}
+
+/* ---------- Small Bot ---------- */
+.small-bot img {
+  width: 9.38vw;
+  border-radius: 50%;
+  margin-top: 1.04vw;
+}
+
+.robot-pic img {
+  width: 13vw;
+  height: 23vw;
+}
+
+.rocket {
+  z-index: 100;
+}
+
+.rocket img {
+  width: 8vw;
+  margin-top: 1vw;
+  z-index: 100;
+  margin-right: 2vw;
+  position: relative;
+}
+
+/* ---------- Left Side ---------- */
+.hero-left {
+  display: flex;
+  gap: 2vw;
+  flex: 1;
+  position: relative;
+}
+
+/* --- Section 1 --- */
+.hero-left-sect1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-left-sect1-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3.84vw 1.5vw;
+  /* 20% ≈ 3.84vw if container height ≈ 19.2vw */
+  z-index: 100;
+}
+
+.hero-left-sect1-text p {
+  color: #191c1b;
+  font-weight: 300;
+  font-size: 0.9vw;
+}
+
+.blue-circle {
+  width: 0.83vw;
+  height: 0.83vw;
+  background-color: #1d7ba2;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.42vw;
+  margin-top: 0.42vw;
+}
+
+/* --- Section 2 --- */
+.hero-left-sect2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  margin-top: 1vw;
+  gap: 2vw;
+}
+
+.hero-left-sect2-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.52vw;
+  padding: 3.84vw 1.83vw;
+}
+
+.hero-left-sect2-text img {
+  width: 3vw;
+}
+
+.hero-left-sect2-text p {
+  text-align: center;
+  font-weight: 300;
+  color: #191c1b;
+  line-height: 1.1;
+  font-size: 0.9vw;
+}
+
+/* --- Rotating Circle --- */
+.round-animation img {
+  width: 10vw;
+  /* Image size in vw */
+  height: 10vw;
+  /* Maintain square shape */
+  transform-origin: center;
+  margin-top: -1vw;
+}
+
+.bg-design2 {
+  position: absolute;
+  z-index: 0;
+  width: 26.5vw;
+  top: 13vw;
+  left: 0;
+  height: 23vw;
+}
+
+.hero-stats-content {
+  padding-bottom: 3vw;
+}
+
+/* animation  */
+/* =========================
+   HERO ANIMATIONS (SYNCHRONIZED JERK STYLE)
+========================= */
+
+/* All main elements start at once */
+.hero-textbox,
+.hero-left-sect1-text,
+.hero-left-sect2-text {
+  animation-delay: 0.05s !important;
+}
+
+/* ---------- Textbox ---------- */
+.hero-textbox {
+  opacity: 0;
+  transform: translateY(-80px);
+  animation: slideDownFast 0.6s cubic-bezier(0.3, 1.3, 0.3, 1) forwards;
+}
+
+@keyframes slideDownFast {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Left Sections ---------- */
+.hero-left-sect1-text,
+.hero-left-sect2-text {
+  opacity: 0;
+  transform: translateX(-80px);
+  animation: slideRightFast 0.6s cubic-bezier(0.3, 1.3, 0.3, 1) forwards;
+}
+
+@keyframes slideRightFast {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* =========================
+   ROCKET + ROUND PERFECT SYNC ANIMATION
+========================= */
+
+/* ---- Rocket zig-zag flight ---- */
+.rocket img {
+  animation: rocketFlight 2.4s ease-in-out forwards;
+}
+
+/* Rocket path: left-up → right-down → left-up → center */
+@keyframes rocketFlight {
+  0% {
+    transform: translate(-80px, -80px);
+  }
+
+  25% {
+    transform: translate(80px, 80px);
+  }
+
+  50% {
+    transform: translate(-60px, 100px);
+  }
+
+  75% {
+    transform: translate(80px, -60px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* ---- Round animation (perfectly synced with rocket) ---- */
+.round-animation img {
+  animation: roundSyncPerfect 2.4s ease-in-out forwards,
+    spinSlow 10s linear infinite;
+  animation-delay: 0s, 2.4s;
+}
+
+/* Round spin matches rocket direction exactly */
+@keyframes roundSyncPerfect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* Rocket moving left-up → right-down = spin right jerk */
+  25% {
+    transform: rotate(90deg);
+  }
+
+  /* Rocket moving right-down → left-up = spin left jerk */
+  50% {
+    transform: rotate(-90deg);
+  }
+
+  /* Rocket moving left-up → right-up = small right correction */
+  75% {
+    transform: rotate(60deg);
+  }
+
+  /* Back to center */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* After flight, infinite slow right spin */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    padding: 4vw;
+  }
+
+  .hero-textbox {
+    border-radius: 2vw;
+    padding: 4.5vw 3vw;
+    max-width: 100%;
+    z-index: 100;
+  }
+
+  .hero-left {
+    display: none;
+  }
+
+  .hero-textbox h1 {
+    font-size: 4.5vw;
+  }
+
+  .subtext {
+    margin-top: 1vw;
+    font-size: 2vw;
+  }
+
+  .hero-textbox-footer {
+    margin-top: 5vw;
+  }
+
+  .demo-btn {
+    font-size: 2vw;
+  }
+
+  .hero-textbox-footericons img:nth-child(2),
+  .hero-textbox-footericons img:nth-child(2) {
+    width: 5vw;
+  }
+
+  .hero-textbox-footericons img:nth-child(1) {
+    left: -3vw;
+  }
+
+  .hero-stats-content h3 {
+    font-size: 2.5vw;
+  }
+
+  .hero-stats-content p {
+    font-size: 1.5vw;
+  }
+
+  .small-bot {
+    display: none;
+  }
+
+  .display-none {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .round-animation {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .round-animation img {
+    width: 15vw;
+    height: 15vw;
+    transform-origin: center;
+    margin-top: 0vw;
+  }
+}
+
+/* ---------- Small Devices (768px ↓ to 320px) ---------- */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 6vw 4vw;
+  }
+
+  .hero-textbox {
+    border-radius: 3vw;
+    padding: 6vw 4vw;
+    max-width: 100%;
+  }
+
+  .hero-textbox h1 {
+    font-size: 5.5vw;
+  }
+
+  .subtext {
+    margin-top: 2vw;
+    font-size: 3vw;
+  }
+
+  .demo-btn {
+    font-size: 3vw;
+    padding: 2.5vw 3vw;
+    border-radius: 2vw;
+  }
+
+  .hero-textbox-footer {
+    margin-top: 6vw;
+    align-items: flex-start;
+    gap: 2vw;
+  }
+
+  .hero-textbox-footericons img:nth-child(2),
+  .hero-textbox-footericons img:nth-child(2) {
+    width: 8vw;
+  }
+
+  .hero-textbox-footericons img:nth-child(1) {
+    left: -6.5vw;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 4vw;
+    margin-top: 4vw;
+    border-bottom: none;
+  }
+
+  .hero-stats-content h3 {
+    font-size: 3.5vw;
+  }
+
+  .hero-stats-content p {
+    font-size: 2.5vw;
+  }
+
+  .small-bot img {
+    width: 18vw;
+  }
+
+  .robot-pic img {
+    width: 22vw;
+    height: 38vw;
+  }
+
+  .rocket img {
+    width: 14vw;
+  }
+
+  .hero-left {
+    display: none;
+  }
+
+  .round-animation {
+    display: flex !important;
+    justify-content: start;
+    align-items: self-start;
+    margin-top: 0;
+  }
+
+  .round-animation img {
+    width: 17vw;
+    height: 17vw;
+    transform-origin: center;
+    margin-top: 0vw;
+  }
+
+}
+
+/* ---------- Extra Small Devices (480px ↓ to 320px) ---------- */
+@media (max-width: 480px) {
+  .hero {
+    padding: 8vw 5vw;
+  }
+
+  .hero-textbox {
+    padding: 8vw 5vw;
+    border-radius: 4vw;
+  }
+
+  .hero-textbox h1 {
+    font-size: 6.8vw;
+    line-height: 1.3;
+  }
+
+  .subtext {
+    font-size: 3.5vw;
+  }
+
+  .demo-btn {
+    font-size: 3.8vw;
+    padding: 3vw 4vw;
+    border-radius: 2.5vw;
+  }
+
+  .hero-stats-content h3 {
+    font-size: 4.2vw;
+  }
+
+  .hero-stats-content p {
+    font-size: 3vw;
+  }
+
+  .hero-textbox-footericons img:nth-child(2),
+  .hero-textbox-footericons img:nth-child(2) {
+    width: 10vw;
+  }
+
+  .hero-textbox-footericons img:nth-child(1) {
+    /* left: -5vw; */
+  }
+
+  .small-bot img {
+    width: 24vw;
+  }
+
+  .rocket img {
+    width: 18vw;
+  }
+
+
+  .round-animation img {
+    width: 20vw;
+    height: 20vw;
+    transform-origin: center;
+    margin-top: 0vw;
+  }
+
+}

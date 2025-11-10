@@ -1,0 +1,266 @@
+/* === Overall Navbar === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ccd6db;
+  height: 6.25vw;
+  padding: 0 6vw;
+  position: relative;
+}
+
+/* === Left section === */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.bg-design-mob {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index:0;
+  width: 25vw;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  margin-left: 2vw;
+}
+
+.logo {
+  width: 10vw;
+  z-index: 100;
+  animation-delay: 0.05s !important;
+  animation: slideDownFast 0.6s cubic-bezier(0.3, 1.3, 0.3, 1) forwards;
+    z-index: 100;
+
+}
+
+/* === Right section === */
+.nav-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 7vw;
+  margin-right: 7vw;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 300;
+  transition: color 0.3s;
+  font-size: 1.4vw;
+}
+
+.nav-links a:hover {
+  color: #1d7ba2;
+}
+
+/* === Start Now button === */
+.start-btn {
+  background-color: transparent;
+  border: 0.07vw solid #000;
+  font-size: 1.4vw;
+  padding: 0.6vw 1.25vw;
+  border-radius: 0.6vw;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 0.4vw 1.25vw rgba(0, 0, 0, 0.12),
+              0 0.15vw 0.3vw rgba(0, 0, 0, 0.06) inset;
+}
+
+.start-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Background design */
+.bg-design1 {
+  position: absolute;
+  top: 0;
+  z-index:0;
+  width: 25vw;
+}
+
+/* Hide mobile button by default */
+.mobile-btn {
+  display: none;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  width: 7vw;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* ---------- Animation ---------- */
+@keyframes slideDownFast {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =======================================
+   RESPONSIVE STYLING
+======================================= */
+@media (max-width: 1024px) {
+  .navbar {
+    height: auto;
+    padding: 2vw 4vw;
+  }
+
+    .bg-design-mob {
+        display: block;
+        position: absolute;
+        top: -4vw;
+        border-radius: 9vw;
+        left: 1vw;
+    }
+
+  .nav-links a {
+    font-size: 1.8vw;
+  }
+
+  .logo {
+    width: 14vw;
+  }
+
+  .bg-design1{
+    display: none;
+  }
+}
+
+/* ===== MOBILE: 768px ↓ ===== */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 4vw 5vw;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+
+    .mobile-btn {
+        display: inline-block;
+        font-size: 3vw;
+        padding: 1vw 2vw;
+        border-radius: 2vw;
+        border: 1px solid #000;
+        margin-right: 1vw;
+    }
+
+        .bg-design-mob {
+        display: block;
+        position: absolute;
+        top: 1vw;
+        border-radius: 7vw;
+        left: 6vw;
+    }
+  .hamburger {
+    display: block;
+    width: 6vw;
+  }
+
+  .nav-right {
+    position: relative;
+  }
+
+  /* Dropdown hidden by default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 10vw;
+    right: 0;
+    background-color: #ccd6db;
+    width: 55vw;
+    padding: 4vw 6vw;
+    border-radius: 2vw;
+    box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  /* When menu open */
+  .nav-links.active {
+    display: flex;
+    gap: 5vw;
+    animation: dropdownSlide 0.4s ease forwards;
+  }
+
+  @keyframes dropdownSlide {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .nav-links a {
+    font-size: 4vw;
+    color: #000;
+  }
+
+  .logo {
+    width: 22vw;
+  }
+}
+
+/* ===== 480px ↓ ===== */
+@media (max-width: 480px) {
+  .mobile-btn {
+    font-size: 4vw;
+    padding: 1vw 4vw;
+  }
+
+  .nav-links {
+    width: 65vw;
+  }
+
+  .hamburger {
+    width: 7vw;
+  }
+
+  .logo {
+    width: 30vw;
+  }
+
+    .bg-design-mob {
+        display: block;
+        position: absolute;
+        top: -3vw;
+        border-radius: 9vw;
+        left: 3vw;
+        width: 38vw;
+    }
+}

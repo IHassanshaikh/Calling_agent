@@ -1,0 +1,167 @@
+.smart-section {
+  /* background: linear-gradient(120deg, #c8c2ff, #d7e1ff, #b4e0ff, #f3e0ff); */
+  background-image: url("../assets/Rectangle3.png");
+  padding: 6vw 6vw;
+  color: #111;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.smart-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.smart-title {
+  font-size: 2.8vw;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.3;
+  margin-bottom: 1vw;
+}
+
+.smart-subtitle {
+  font-size: 1.1vw;
+  color: #333;
+  margin-bottom: 4vw;
+}
+
+.smart-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.step-card {
+  flex: 1 1 calc(25% - 2vw);
+  background: #111;
+  color: #fff;
+  border-radius:30px;
+  padding: 2.5vw 2vw;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.step-number {
+  font-size: 2vw;
+  font-weight: 600;
+  opacity: 0.5;
+  display: block;
+  margin-bottom: 1.3vw;
+}
+
+.step-card h3 {
+  font-size: 1.6vw;
+  font-weight: 400;
+  margin-bottom: 2vw;
+    line-height: 1.2;
+
+}
+
+.step-card p {
+  font-size: 1.2vw;
+  line-height: 1.2;
+  color: #D2DBDF;
+  font-weight: lighter;
+}
+
+/* Footer Section */
+.smart-footer {
+margin-top: 5vw;
+    text-align: start;}
+
+.smart-footer h3 {
+  font-size: 3vw;
+  font-weight: 400;
+  margin-bottom: 0.8vw;
+}
+
+.smart-footer p {
+  font-size: 1.05vw;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+
+  .smart-section {
+  padding:10vw 4vw;
+}
+
+  .smart-title {
+    font-size: 5vw;
+  }
+
+  .smart-subtitle {
+    font-size: 2vw;
+  }
+
+  .step-card {
+    flex: 1 1 calc(50% - 2vw);
+    padding: 4vw 3vw;
+  }
+
+  .step-number {
+    font-size: 3vw;
+  }
+
+  .step-card h3 {
+    font-size: 2.2vw;
+    margin-bottom: 0;
+  }
+
+  .step-card p {
+    font-size: 1.8vw;
+  }
+
+  .smart-footer h3 {
+    font-size: 4.5vw;
+  }
+
+  .smart-footer p {
+    font-size: 2.2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .smart-section {
+    padding: 10vw 6vw;
+  }
+
+  .smart-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .step-number {
+    font-size: 4vw;
+  }
+
+  .step-card h3 {
+    font-size: 4.2vw;
+  }
+
+  .step-card p {
+    font-size: 3.5vw;
+  }
+
+  .smart-footer h3 {
+    font-size: 4.5vw;
+  }
+
+  .smart-footer p {
+    font-size: 3.5vw;
+  }
+}

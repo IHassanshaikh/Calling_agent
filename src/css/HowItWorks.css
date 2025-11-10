@@ -1,0 +1,462 @@
+/* ---------- MAIN CONTAINER ---------- */
+.working-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1vw 6vw;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #000;
+}
+
+/* ---------- SECTION 1 ---------- */
+.working-section1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6vw;
+  width: 100%;
+  margin-bottom: -4.5vw;
+}
+
+.working-section1 div {
+  width: 29%;
+  height: 9.8vw;
+  background-image: url(/src/assets/Rectangle7.png?t=1761327276870);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.working-section1 div:hover {
+  transform: scale(1.03);
+}
+
+.working-section1 div p {
+  font-size: 1vw;
+  color: #fff;
+  padding: 1vw 3vw;
+}
+
+.working-section1 h1 {
+  font-size: 3.1vw;
+  font-weight: 600;
+  margin-top: 0.5vw;
+}
+
+/* ---------- SECTION 3 ---------- */
+.working-section3 {
+  width: 47vw;
+  background-image: url(/src/assets/Rectangle4.png?t=1761328665268);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 2vw;
+  color: #fff;
+  align-self: flex-end;
+  height: 5vw;
+  margin-top: -4.1vw;
+}
+
+.working-section3-circle {
+  display: flex;
+  gap: 0.2vw;
+}
+
+.working-section3-circle span {
+  width: 0.73vw;
+  height: 0.73vw;
+  border-radius: 50%;
+}
+
+.working-section3-circle span:nth-child(1) {
+  background-color: #fff;
+}
+
+.working-section3-circle span:nth-child(2) {
+  background-color: turquoise;
+}
+
+.working-section3 h3 {
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+
+/* ---------- SECTION 2 ---------- */
+.working-section2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.63vw;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.6vw 3vw;
+  height: 39vw;
+  color: #ffffff;
+  background-image: url(/src/assets/Subtract6.png?t=1761324715429);
+}
+
+.working-section2-box1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  justify-content: flex-end;
+  padding-bottom: 3vw;
+}
+
+.working-section2-box1 h2 {
+  font-size: 3.2vw;
+  line-height: 1.2;
+  font-weight: 500;
+  color: black;
+}
+
+.working-section2-box1 p {
+  font-size: 1.46vw;
+  line-height: 1.5;
+  color: #333;
+  max-width: 90%;
+}
+
+.working-section2-box1 button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.9vw 1.3vw;
+  border-radius: 0.8vw;
+  font-weight: 400;
+  margin-top: 1vw;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.04vw;
+  width: 20vw;
+}
+
+.working-section2-box1 button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* ---------- RIGHT SIDE ---------- */
+.working-section2-box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+  gap: 0.8vw;
+}
+
+.working-section2-box2 img {
+  width: 88%;
+  max-width: 40vw;
+  border-radius: 0.5vw;
+  height: 18vw;
+}
+
+/* ---------- CARD ---------- */
+.working-box2-card {
+  background-image: url(/src/assets/Subtract5.png);
+  border-radius: 1.5vw;
+  padding: 1.2vw 1.8vw;
+  width: 88%;
+  height: 12.3vw;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.working-box2-card span {
+  display: block;
+  margin-bottom: 1.3vw;
+}
+
+.working-box2-card h4 {
+  font-size: 0.94vw;
+  font-weight: 300;
+  margin-bottom: 0.3vw;
+}
+
+.working-box2-card p {
+  font-size: 0.73vw;
+  line-height: 1.3;
+  color: #bbbbbb;
+}
+
+/* ---------- ARROW BUTTON ---------- */
+.arr-button2 {
+  position: absolute;
+  right: -0.6vw;
+  top: 6.8vw;
+  width: 6vw !important;
+  height: 6vw !important;
+  border-radius: 50%;
+  padding: 0.63vw;
+  transition: all 0.3s ease;
+}
+
+.arr-button2:hover {
+  cursor: pointer;
+  transform: translateY(-0.4vw);
+}
+
+@media (max-width: 1024px) {
+  .working-section1 div p {
+    font-size: 1.2vw;
+    color: #fff;
+    padding: 1vw 1.2vw;
+  }
+
+  .working-section2 {
+    height: 41vw;
+  }
+
+  .working-section {
+    padding: 4vw;
+  }
+
+  .working-section2-box1 p {
+    font-size: 1.8vw;
+    line-height: 1.3;
+    max-width: 100%;
+  }
+
+  .working-section2-box1 button {
+    font-size: 1.5vw;
+  }
+
+  .working-box2-card h4 {
+    font-size: 1.4vw;
+  }
+
+  .working-box2-card p {
+    font-size: 1.1vw;
+    line-height: 1.2;
+  }
+
+  .working-box2-card {
+    border-radius: 1.5vw;
+    padding: 1.2vw 1.4vw;
+    width: 99%;
+    height: 14.3vw;
+  }
+
+  .working-section2-box2 img {
+    width: 100%;
+    max-width: 42vw;
+    border-radius: 0.5vw;
+    height: 18vw;
+  }
+
+  .working-section3 {
+    width: 49vw;
+  }
+
+  .arr-button2 {
+    width: 7vw !important;
+    height: 7vw !important;
+    right: -0.6vw;
+    top: 8.3vw;
+  }
+
+  .working-section1 div {
+    width: 29%;
+    height: 10.5vw;
+  }
+
+  .working-section1 {
+    margin-bottom: -5.2vw;
+  }
+
+  .working-section3 h3 {
+    font-size: 1.5vw;
+  }
+}
+
+/* ---------- RESPONSIVE FOR TABLETS & MOBILE ---------- */
+@media (max-width: 768px) {
+  /* MAIN CONTAINER */
+  .working-section {
+    padding: 2vw 5vw;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* SECTION 1 */
+  .working-section1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;
+    margin-bottom: 0;
+  }
+
+  .working-section1 div {
+    display: none;
+  }
+
+  .working-section1 div p {
+    font-size: 3.6vw;
+    padding: 2vw 4vw;
+  }
+
+  .working-section1 h1 {
+    font-size: 4.6vw;
+    line-height: 1.1;
+        margin: 2vw 0;
+  }
+
+  /* SECTION 2 */
+  .working-section2 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 4vw 5vw 7vw 5vw;
+    border-radius: 2vw;
+    background-position: center;
+    background-color: #729dbc;
+    background-image: none;
+  }
+
+  .working-section2-box1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0;
+    gap: 4vw;
+  }
+
+  .working-section2-box1 h2 {
+    font-size: 4vw;
+    line-height: 1.2;
+  }
+
+  .working-section2-box1 p {
+    font-size: 3vw;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .working-section2-box1 button {
+    font-size: 2.5vw;
+    width: 50%;
+    padding: 2vw 2.6vw;
+    border-radius: 2vw;
+    margin: 0 auto;
+  }
+
+  /* RIGHT SIDE IMAGES */
+  .working-section2-box2 {
+    width: 100%;
+    align-items: center;
+    margin-top: 6vw;
+    gap: 3vw;
+  }
+
+  .working-section2-box2 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 2vw;
+  }
+
+  /* CARD */
+  .working-box2-card {
+    width: 100%;
+    height: auto;
+    padding: 2vw 4vw;
+    border-radius: 3vw;
+    text-align: left;
+    margin-bottom: 6vw;
+    background-image: none;
+    background-color: #0071a7;
+  }
+
+  .working-box2-card h4 {
+    font-size: 3vw;
+    margin-bottom: 0.3vw;
+    line-height: 1.2;
+  }
+
+  .working-box2-card p {
+    font-size: 2.3vw;
+    line-height: 1.2;
+  }
+
+  .working-box2-card span {
+    margin-bottom: 3vw;
+  }
+
+  /* ARROW BUTTON */
+  .arr-button2 {
+    width: 12vw !important;
+    height: 12vw !important;
+    right: -6vw;
+    top: auto;
+    bottom: -5vw;
+  }
+  /* SECTION 3 */
+  .working-section3 {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    padding: 2vw 0;
+    margin-top: -10vw;
+    border-radius: 2vw;
+    text-align: center;
+    background-color: black;
+    background-image: none;
+  }
+
+  .working-section3 h3 {
+    font-size: 2.5vw;
+  }
+
+  .working-section3-circle span {
+    width: 2.6vw;
+    height: 2.6vw;
+  }
+}
+
+/* ---------- EXTRA SMALL (Below 480px) ---------- */
+@media (max-width: 480px) {
+  .working-section1 div {
+    height: 45vw;
+  }
+
+  .working-section2-box1 h2 {
+    font-size: 6.8vw;
+  }
+
+  .working-section2-box1 p {
+    font-size: 4vw;
+  }
+
+  .working-section2-box1 button {
+    font-size: 4vw;
+    width: 70%;
+  }
+
+  .working-box2-card h4 {
+    font-size: 4vw;
+  }
+
+  .working-box2-card p {
+    font-size: 3.4vw;
+  }
+
+  .working-section3 h3 {
+    font-size: 4.4vw;
+  }
+}

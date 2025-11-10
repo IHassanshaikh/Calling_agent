@@ -1,0 +1,79 @@
+/* === Basic CSS Reset === */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Root defaults === */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Unbounded", sans-serif !important;
+  background-color: #ccd6db;
+  color: #111;
+}
+
+.body-container {
+      padding: 0 0;
+
+}
+/* === Links === */
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Unbounded", sans-serif;
+  z-index: 100;
+
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* === Images === */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* === Headings and paragraphs === */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* === Lists === */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Buttons and inputs === */
+button, input, textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;   /* smooth hover */
+}
+
+button:hover {
+  transform: translateY(-2px); /* small lift effect */
+}
+
+.input-error {
+  color: #dc2626;
+  font-size: 0.8rem;
+}
